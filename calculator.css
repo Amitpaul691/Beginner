@@ -1,0 +1,14 @@
+#answer{
+    width: 100px;
+}
+#formstyle{
+ width: 110px   ;
+ height: 200px;
+ margin:auto ;
+border: 4px solid;
+background-color: pink;
+}
+input{
+    background-color: yellow;
+    
+}
