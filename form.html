@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>making a form</title>
+    <style>
+            body{background-color: lightblue;}
+            #register-form{width: 300px; margin-right: auto;margin-left: auto; background-color: white;padding: 24px;}
+            .input-iteam{width: 100%;}
+            h1{text-align: center;}
+            #term-check{margin-top: 12px; margin-bottom: 18px;}
+   </style>
+    </head>
+    <body>
+        <h1>Signup</h1>
+        <form method="GET" id="register-form">
+            
+            <div>
+            <label for="fullname">Full name:</label><br>
+            <input class="input-iteam" type="text" id="fullname" name="fullname" required ><br>
+            </div>
+            <div>
+                <label for="dob">date of birth</label><br>
+                <input class="input-iteam" type="date" id="dob" name="date" max="2005-01-01" min="1995-01-01"><br>
+                </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input class="input-iteam" type="text" id="email" name="email"><br>
+                </div>
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input class="input-iteam" type="password" id="password" name="password" required maxlength="16"><br>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirm password:</label><br>
+                        <input class="input-iteam" type="password" id="confirm_password" name="confirm_password" required maxlength="16"><br>
+                        </div>
+                    <div>
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" id="gender" name="gender" value="men">men
+                        <input type="radio" id="gender" name="gender" value="women">women
+                        <input type="radio" id="gender" name="gender" value="transgender">transgender
+                    </div>
+                        <div>
+                            <label for="sec_ques">Security Question:</label><br>
+                            <select class="input-iteam" name="security_question" id="sec_ques">
+                                <option value="pet_name">my first pet name</option>
+                                <option value="nick_name">my nickname</option>
+                                <option value="fav_sport">my fav_sport</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea class="input-iteam" name="answer" rows="6" cols="30"></textarea>
+                        </div>
+                        <div>
+                            <input id="term-check" type="checkbox" name="term&condition" value="accept">I agree to accept your all term & conditions
+                        </div>
+                        <input type="submit" value="register">
+        </form>
+    </body>
+</html>
